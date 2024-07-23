@@ -34,28 +34,43 @@
                 <div class="card shadow">
 
                     <div class="card-header">
-                        <h5 class="text-success">เข้าสู่ระบบเว็บบล็อก</h5>
+                        <h5 class="text-success">ลงทะเบียนเข้าสู่ระบบ</h5>
                     </div>
 
                     <div class="card-body">
                         <form action="/login" method="post">
+
                             <div class="mb-3">
-                                <label for="exampleInputEmail1" class="form-label">อีเมลล์</label>
+                                <label for="">ชื่อ</label>
+                                <input type="text" name="first_name" class="form-control" placeholder="กรุณาใส่ ชื่อ" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="">นามสกุล</label>
+                                <input type="text" name="last_name" class="form-control" placeholder="กรุณาใส่ นามสกุล" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="" class="form-label">อีเมลล์</label>
                                 <input type="email" class="form-control" placeholder="กรุณาใส่ อีเมลล์" required>
                             </div>
 
                             <div class="mb-3">
-                                <label for="exampleInputPassword1" class="form-label">รหัสผ่าน</label>
+                                <label for="" class="form-label">รหัสผ่าน</label>
                                 <input type="password" class="form-control" placeholder="กรุณาใส่ รหัสผ่าน" required>
                             </div>
 
-                            <div class="mb-3 badge d-grid">
-                                <button type="submit" class="btn btn-primary">เข้าสู่ระบบเว็บบล็อก</button>
+                            <div class="mb-3">
+                                <label for="">ที่อยู่</label>
+                                <textarea name="address" class="form-control"></textarea>
                             </div>
-                            <p class="text-body font-weight-light mt-4 text-center"> Dont't have an account?
-                                <a href="/register" class="text-primary text-decoration-none font-weight-bolder">
-                                    Sign Up
-                                </a>
+
+                            <div class="mb-3 badge d-grid">
+                                <button type="submit" class="btn btn-primary">ลงทะเบียนเข้าสู่ระบบเว็บบล็อก</button>
+                            </div>
+
+                            <p class="text-body font-weight-light mt-4 text-center"> allready have an account?
+                                <a href="/login" class="text-primary text-decoration-none font-weight-bolder">Sign In</a>
                             </p>
                         </form>
                     </div>
